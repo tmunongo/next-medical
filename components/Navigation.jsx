@@ -73,7 +73,7 @@ const Navigation = () => {
         </div>
         {/* the menu proper */}
         {menu
-            ?   <div className='bg-cyan-800 absolute text-black md:grid md:grid-rows-2 md:grid-cols-3 justify-items-center items-center flex-column overflow-auto h-screen left-0 top-0 w-screen p-8 md:py-22 md:px-30 z-10 ease-in duration-300'>
+            ?   <div className='bg-sky-800 absolute text-white md:grid md:grid-rows-2 md:grid-cols-3 justify-items-center items-center flex-column overflow-auto h-screen left-0 top-0 w-screen p-8 md:py-22 md:px-30 z-10 ease-in duration-300'>
                     <div className='flex w-screen absolute top-4 left-0 px-2 md:px-12'>
                         <HeaderName />
                         <div>
@@ -83,7 +83,7 @@ const Navigation = () => {
                     {/* About us Menu item */}
                         <div className='p-4'>
                             <ul className=''>
-                                <p className='text-3xl font-bold pb-4'>
+                                <p className='text-3xl font-bold py-2'>
                                     <Link href="/about">
                                         About Us
                                     </Link>
