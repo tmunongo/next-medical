@@ -159,7 +159,7 @@ const Footer = () => {
             </div>
             {/* Locations */}
             {/* box 5 */}
-            <div className='flex flex-col flex-wrap md:items-end p-1 md:p-4 w-1/3'>
+            <div className='flex flex-col flex-wrap md:items-center p-1 md:p-4 w-1/4'>
                 <div>
                     <p className='text-xl font-bold pb-2 uppercase'>
                         <Link href="/">

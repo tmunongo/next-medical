@@ -17,18 +17,18 @@ const Navigation = () => {
         setSearch(!search)
     }
   return (
-    <div className='h-20 md:h-28 bg-white flex flex-nowrap items-center p-4 sticky top-0 w-full'>
+    <div className='h-20 md:h-24 bg-white flex flex-nowrap items-center p-4 sticky top-0 w-full'>
         {/* left side */}
         <HeaderName />
         {/* center */}
-        <div className='mid:flex grow-[2] items-center justify-center'>
+        <div className='md:flex grow-[2] items-center justify-center'>
             {/* search button */}
                 <div  onClick={handleSearch} className='flex items-center justify-end pr-2 md:pr-12'>
-                        <div className='hidden cursor-grab md:flex text-xl font-extrabold text-right uppercase'>
+                        <div className='hidden cursor-grab md:flex text-l font-extrabold text-right uppercase'>
                             Search
                         </div>
                         <div className='cursor-grab pl-2 text-black'>
-                            <HiSearch size={40} />
+                            <HiSearch size={35} />
                         </div>
                 </div>
             {/* Drop-down Search box */}
@@ -66,8 +66,8 @@ const Navigation = () => {
             <div onClick={handleMenuClick}>
                 {
                     menu
-                    ?   <CgClose size={50}/>
-                    :   <CgMenuGridR size={50}/>
+                    ?   <CgClose size={40}/>
+                    :   <CgMenuGridR size={40}/>
                 }
             </div>
         </div>
