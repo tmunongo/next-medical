@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='p-2 md:p-4'>
         {/* Contacts bar */}
         <div className='h-40 flex items-center justify-around flex-wrap md:flex-nowrap'>
-            <div>
+            <div className='mr-1 md:mr-0'>
                 <p className='flex'>
                     <Link href='#'>
                         Check out our brochure 
@@ -20,13 +20,13 @@ const Footer = () => {
                     +263777123456
                 </p>
             </div>
-            <div>
+            <div className='mr-1 md:mr-0'>
                 <p className='flex'>
                     <FaPhone size={25} />
                     +263`(04)`45678900
                 </p>
             </div>
-            <div>
+            <div className='mr-1 md:mr-0'>
                 <p className='flex'>
                     <FaFacebookSquare size={25} />
                     <a href='https://www.facebook.com'>
@@ -34,7 +34,7 @@ const Footer = () => {
                     </a>
                 </p>
             </div>
-            <div>
+            <div className='mr-1 md:mr-0'>
             <p className='flex'>
                     <FaLinkedin size={25} />
                     <a href='https://www.linkedin.com'>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </a>
                 </p>
             </div>
-            <div>
+            <div className='mr-1 md:mr-0'>
                 <p className='flex'>
                     <FaTwitter size={25} />
                     <a href='https://www.twitter.com'>
@@ -55,9 +55,9 @@ const Footer = () => {
         <div className='flex p-1 md:p-4 justify-center'>
             <div className='grid grid-cols-2 grid-rows-4 md:grid-cols-3'>
                 {/* box 1 */}
-                        <div className='p-1 md:p-4'>
+                        <div className='p-1 md:p-4 mb-6 md:mb-0'>
                             <ul className=''>
-                                <p className='text-xl font-bold pb-2 uppercase'>
+                                <p className='text-sm md:text-xl font-bold pb-2 uppercase'>
                                     <Link href="/about">
                                         About Us
                                     </Link>
@@ -83,9 +83,9 @@ const Footer = () => {
                             </ul>
                         </div>
                 {/* box 2 */}
-                <div className='p-1 md:p-4'>
+                <div className='p-1 md:p-4 mb-6 md:mb-0'>
                     <ul className=''>
-                        <p className='text-xl font-bold pb-2 uppercase'>
+                        <p className='text-sm md:text-xl font-bold pb-2 uppercase'>
                             <Link href="/about">
                                 Services
                             </Link>
@@ -111,9 +111,9 @@ const Footer = () => {
                     </ul>
                 </div>
                 {/* box 3 */}
-                <div className='p-1 md:p-4'>
+                <div className='p-1 md:p-4 mb-6 md:mb-0'>
                     <ul className=''>
-                        <p className='text-xl font-bold pb-2 uppercase'>
+                        <p className='text-sm md:text-xl font-bold pb-2 uppercase'>
                             <Link href="/about">
                                 Expertise
                             </Link>
@@ -134,9 +134,9 @@ const Footer = () => {
                     </ul>
                 </div>
                 {/* box 4 */}
-                <div className='p-1 md:p-4'>
+                <div className='p-1 md:p-4 mb-6 md:mb-0'>
                     <ul className=''>
-                        <p className='text-xl font-bold pb-2 uppercase'>
+                        <p className='text-sm md:text-xl font-bold pb-2 uppercase'>
                             <Link href="/about">
                                 Careers
                             </Link>
@@ -159,9 +159,9 @@ const Footer = () => {
             </div>
             {/* Locations */}
             {/* box 5 */}
-            <div className='flex flex-col flex-wrap md:items-center p-1 md:p-4 w-1/4'>
+            <div className='flex flex-col flex-wrap md:items-center p-1 md:p-4 w-[30vw]'>
                 <div>
-                    <p className='text-xl font-bold pb-2 uppercase'>
+                    <p className='text-sm md:text-xl font-bold pb-2 uppercase'>
                         <Link href="/">
                             Locations
                         </Link> <br />
@@ -176,7 +176,7 @@ const Footer = () => {
                 </div>
             {/* box 6 */}
             <div>
-                    <p className='text-xl font-bold pb-2 uppercase'>
+                    <p className='text-sm md:text-xl font-bold pb-2 uppercase'>
                         Bulawayo Office
                     </p>
                     <p className='text-gray-500'>
@@ -188,7 +188,7 @@ const Footer = () => {
                 </div>
                 {/* Botswana branch */}
                 <div>
-                    <p className='text-xl font-bold pb-2 uppercase'>
+                    <p className='text-sm md:text-xl font-bold pb-2 uppercase'>
                         Botswana Office
                     </p>
                     <p className='text-gray-500'>

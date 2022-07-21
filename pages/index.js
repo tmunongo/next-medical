@@ -27,11 +27,13 @@ const banners = [
   },
 ]
 
+const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ')
 }
 
-const delay = 2500
+const delay = 3500
 
 export default function Home() {
   const [pos, setPos] = useState(0)
@@ -59,39 +61,53 @@ export default function Home() {
 
   return (
     <div className='bg-gray-300'>
-      <div className='h-screen bg-white px-48 py-20 items-center' >
-        {banners.map((item, index) => {
-          return(
-            // main div
-              <div key={index} className={classNames('flex flex-col h-3/4')} >
-                {/* div for horizontal slider items */}
-                <div className='flex'>
-                    {/* div for left column */}
-                  <div className=' bg-white items-center p-1 md:p-4 flex flex-col justify-evenly w-1/2'>
-                    <p className='text-4xl text-blue-600'>
-                      {item.header}
-                    </p>
-                    <p className='text-xl'>
-                      {item.content}
-                    </p>
-                    <p className='max-w-max p-4 text-blue-900 font-bold border-blue-900 border-solid border-2'>
-                      <Link href='/'>
-                        Read More
-                      </Link>
-                    </p>
-                  </div>
-                  {/* div for right column */}
-                  <div className='block justify-end items-end p-4 w-1/2'>
-                    <Image src={item.img.src} alt='banner' height={500} width={500} />
-                  </div>
+      <div className='bg-white h-[90vh]'>
+      <div className="slideshow">
+        <div
+          className="slideshowSlider"
+          style={{ transform: `translate3d(${-pos * 100}%, 0, 0)` }}
+        >
+          {banners.map((item, index) => (
+            <div
+              className={classNames("slide", "")}
+              key={index}
+            >
+              <div key={index} className='flex flex-col-reverse flex-wrap md:flex-row md:flex-nowrap md:justify-between w-full'>
+                {/* div for left column */}
+                <div className=' bg-white items-center p-1 md:p-4 flex flex-col md:justify-evenly md:w-1/2'>
+                  <p className='text-2xl md:text-4xl text-blue-600 whitespace-pre-wrap'>
+                    {item.header}
+                  </p>
+                  <p className='text-xl whitespace-pre-wrap'>
+                    {item.content}
+                  </p>
+                  <p className='max-w-max p-1 md:p-4 text-blue-900 font-bold border-blue-900 border-solid border-2 mt-4 md:mt-0'>
+                    <Link href='/'>
+                      Read More
+                    </Link>
+                  </p>
                 </div>
-                {/* div for slider buttons */}
-                <div className='bg-purple-300 h-20 items-center'>
-                  
+                {/* div for right column */}
+                <div className='block justify-end items-end p-4 md:w-1/2'>
+                  <Image src={item.img.src} alt='banner' height={500} width={600} />
                 </div>
-              </div>
-          )
-      })}
+            </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="slideshowDots">
+          {colors.map((_, idx) => (
+            <div
+              key={idx}
+              className={`slideshowDot${pos === idx ? " active" : ""}`}
+              onClick={() => {
+                setPos(idx);
+              }}
+            ></div>
+          ))}
+        </div>
+      </div>
       </div>
       <div className='h-screen bg-rose-400'>
 
