@@ -117,7 +117,7 @@ export default function Home() {
       <div className="h-full">
         <div className="flex flex-col md:flex-row items-center justify-center text-white my-8 w-screen">
           <div className="bg-blue-700 h-[400px] w-full md:w-[400px] hover:bg-blue-800 hover:h-[440px] hover:z-100 p-10 transition-all duration-500">
-            <div className="flex flex-col text-left">
+            <div className="flex flex-col text-center md:text-left">
               <h1 className="text-xl font-bold my-2">Medical Safety</h1>
               <h3 className="text-l font-bold my-2">Sub Heading</h3>
               <p>
@@ -140,7 +140,7 @@ export default function Home() {
               velit
             </p>
           </div>
-          <div className="bg-violet-800 flex-col h-[400px] w-full md:w-[400px] hover:bg-violet-900 hover:h-[440px] hover:z-100 p-10 transition-all duration-500 text-right">
+          <div className="bg-violet-800 flex-col h-[400px] w-full md:w-[400px] hover:bg-violet-900 hover:h-[440px] hover:z-100 p-10 transition-all duration-500 text-center md:text-right">
             <h1 className="text-xl font-bold my-2">Medical Consultancy</h1>
             <h3 className="text-l font-bold my-2">
               Bridging business and medicine

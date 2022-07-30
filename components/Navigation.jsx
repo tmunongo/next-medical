@@ -17,11 +17,11 @@ const Navigation = () => {
     setSearch(!search)
   }
   return (
-    <div className="h-20 md:h-24 bg-white flex flex-nowrap items-center p-4 sticky top-0 w-full z-20">
+    <div className="h-20 md:h-24 bg-white flex flex-nowrap items-center p-4 md:px-[10%] sticky top-0 w-full z-20">
       {/* left side */}
       <HeaderName />
       {/* center */}
-      <div className="md:flex grow-[2] items-center justify-center">
+      <div className="md:flex items-center justify-center md:w-[400px]">
         {/* search button */}
         <div
           onClick={handleSearch}
@@ -87,10 +87,10 @@ const Navigation = () => {
       </div>
       {/* the menu proper */}
       {menu ? (
-        <div className="bg-sky-800 absolute text-white md:grid md:grid-rows-2 md:grid-cols-3 justify-items-center items-center flex-column overflow-auto h-screen left-0 top-0 w-screen p-8 md:py-22 md:px-30 z-1000 ease-in duration-300">
+        <div className="bg-sky-800 absolute text-white md:grid md:grid-rows-2 md:grid-cols-3 justify-items-center items-center flex-column overflow-auto h-screen left-0 top-0 w-screen p-8 md:py-22 md:px-[10%] z-1000 ease-in duration-300">
           <div className="flex w-screen absolute top-4 left-0 px-2 md:px-12">
             <HeaderName />
-            <div>
+            <div className="mr-[10%]">
               <CgClose
                 onClick={handleMenuClick}
                 size={45}
