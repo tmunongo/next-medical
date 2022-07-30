@@ -37,11 +37,11 @@ const Navigation = () => {
         {/* Drop-down Search box */}
         {search ? (
           <div className="bg-cyan-800 absolute text-white flex justify-around h-32 items-center left-0 top-0 w-screen p-2 z-10 ease-in duration-300">
-            <div className="flex justify-start">
+            <div className="flex justify-center w-3/5">
               <div>
                 <input
                   type="text"
-                  className="rounded-lg p-4 mr-2 w-full text-black"
+                  className="rounded-lg p-4 mr-2 text-black w-full"
                   placeholder="Input search term here..."
                 />
               </div>
