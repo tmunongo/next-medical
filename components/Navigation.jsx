@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsDot } from 'react-icons/bs'
 import { CgClose, CgMenuGridR } from 'react-icons/cg'
 import { HiOutlineXCircle, HiSearch } from 'react-icons/hi'
@@ -17,19 +17,21 @@ const Navigation = () => {
     setSearch(!search)
   }
 
-  window.addEventListener('scroll', (e) => {
-    const nav = document.querySelector('#nav-bar')
-    if (window.scrollY > 0) {
-      nav.classList.add('add-shadow')
-    } else {
-      nav.classList.remove('add-shadow')
-    }
+  useEffect(() => {
+    window.addEventListener('scroll', (e) => {
+      const nav = document.querySelector('#nav-bar')
+      if (window.scrollY > 0) {
+        nav.classList.add('add-shadow')
+      } else {
+        nav.classList.remove('add-shadow')
+      }
+    })
   })
 
   return (
     <div
       id="nav-bar"
-      className="h-20 md:h-24 bg-white flex flex-nowrap items-center p-4 md:px-[10%] sticky top-0 w-full z-20"
+      className="h-20 md:h-24 bg-white flex flex-nowrap items-center p-4 lg:px-[10%] sticky top-0 w-full z-20"
     >
       {/* left side */}
       <HeaderName />
@@ -150,7 +152,7 @@ const Navigation = () => {
               <li>
                 <a
                   href="#"
-                  className="flex text-sm md:text-2xl items-center h-10"
+                  className="flex text-sm lg:text-2xl items-center h-10"
                 >
                   <BsDot white size={30} />
                   Download Our Brochure

@@ -156,7 +156,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[60vh] bg-gray-100 w-full md:mx-[10%] mb-[2%] p-2 md:p-12">
+      <div className="h-[60vh] bg-gray-100 w-full lg:mx-[10%] mb-[2%] p-2 lg:p-12">
         <div className="bg-scrubs  h-min-full w-min-full">
           <h1 className="text-xl font-semibold">
             Watch Some of Our Promotional Videos
