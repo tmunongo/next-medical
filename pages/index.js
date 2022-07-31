@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
+import { BsYoutube } from 'react-icons/bs'
+import { HiArchive } from 'react-icons/hi'
 import Europe from '../public/assets/europe.jpg'
 import Healthcare from '../public/assets/healthcare.jpg'
 import Meeting from '../public/assets/meeting.jpg'
@@ -154,7 +156,39 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-screen bg-cyan-400"></div>
+      <div className="h-[60vh] bg-gray-100 w-full md:mx-[10%] mb-[2%] p-2 md:p-12">
+        <div className="bg-scrubs  h-min-full w-min-full">
+          <h1 className="text-xl font-semibold">
+            Watch Some of Our Promotional Videos
+          </h1>
+          <div className="flex flex-row items-start justify-center mt-12">
+            <div className="bg-orange-600 h-[30vh] w-1/3 flex justify-center items-center">
+              <HiArchive
+                size={80}
+                color="white"
+                className="hover:scale-125 duration-300"
+              />
+            </div>
+            <div className="bg-white h-[30vh] w-2/3">
+              <div className="flex flex-col p-4 md:p-10 justify-around">
+                <p className="text-blue-700 md:text-lg">Top Class Webinars</p>
+                <p className="mt-1 text-blue-700 md:text-lg">
+                  Listen to some of our experts speaking
+                </p>
+                <div className="flex justify-between items-center mt-6 md:mt-20">
+                  <p className="text-orange-600 text-bold">Watch Now</p>
+                  <a href="#">
+                    <BsYoutube
+                      size={30}
+                      className="flex-shrink hover:scale-125 duration-300"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="h-[240px] bg-rose-800 text-white hover:h-[280px] hover:ease-in hover:duration-300 z-2 cursor-grab">
         <div className="flex flex-col items-center justify-around p-4 h-full">
           <p className="text-3xl font-thin">Find out how we can help you</p>

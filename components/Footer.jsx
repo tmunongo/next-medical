@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="mr-1 md:mr-0">
           <p className="flex">
             <FaPhone size={25} />
-            +263`(04)`45678900
+            +263(04)45678900
           </p>
         </div>
         <div className="mr-1 md:mr-0">

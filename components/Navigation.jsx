@@ -16,8 +16,21 @@ const Navigation = () => {
   const handleSearch = () => {
     setSearch(!search)
   }
+
+  window.addEventListener('scroll', (e) => {
+    const nav = document.querySelector('#nav-bar')
+    if (window.scrollY > 0) {
+      nav.classList.add('add-shadow')
+    } else {
+      nav.classList.remove('add-shadow')
+    }
+  })
+
   return (
-    <div className="h-20 md:h-24 bg-white flex flex-nowrap items-center p-4 md:px-[10%] sticky top-0 w-full z-20">
+    <div
+      id="nav-bar"
+      className="h-20 md:h-24 bg-white flex flex-nowrap items-center p-4 md:px-[10%] sticky top-0 w-full z-20"
+    >
       {/* left side */}
       <HeaderName />
       {/* center */}

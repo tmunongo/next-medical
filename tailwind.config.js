@@ -11,6 +11,7 @@ module.exports = {
         healthcare: "url('/public/assets/healthcare.jpg')",
         europe: "url('/public/assets/europe.jpg')",
         meeting: "url('/public/assets/meeting.jpg')",
+        scrubs: "url('/public/assets/scrubs.jpg')",
       },
     },
   },
