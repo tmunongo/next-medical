@@ -82,7 +82,7 @@ const Navigation = () => {
                 />
               </div>
               <div className="m-2 p-1 bg-white rounded-2xl text-black">
-                <HiSearch size={35} />
+                <HiSearch size={35} className="scale-75 md:scale-100" />
               </div>
             </div>
             <div
@@ -97,7 +97,11 @@ const Navigation = () => {
       {/* right side burger menu button*/}
       <div className="cursor-grab flex justify-end pr-2 md:pr-6">
         <div onClick={handleMenuClick}>
-          {menu ? <CgClose size={40} /> : <CgMenuGridR size={40} />}
+          {menu ? (
+            <CgClose size={40} className="scale-75 md:scale-100" />
+          ) : (
+            <CgMenuGridR size={40} className="scale-75 md:scale-100" />
+          )}
         </div>
       </div>
       {/* the menu proper */}
