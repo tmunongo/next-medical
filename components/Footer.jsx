@@ -14,7 +14,11 @@ const Footer = () => {
       <div className="h-40 flex items-center justify-around flex-wrap md:flex-nowrap">
         <div className="mr-1 md:mr-0">
           <p className="flex">
-            <Link href="#">Check out our brochure</Link>
+            <Link href="#">
+              <p className="text-blue-800 capitalize underline underline-offset-2 font-bold">
+                Check out our brochure
+              </p>
+            </Link>
           </p>
         </div>
         <div>

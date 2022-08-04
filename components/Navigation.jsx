@@ -108,7 +108,7 @@ const Navigation = () => {
       {menu ? (
         <div className="bg-sky-800 absolute text-white md:grid md:grid-rows-2 md:grid-cols-3 justify-items-center items-center flex-column overflow-auto h-screen left-0 top-0 w-screen p-8 md:py-22 md:px-[10%] z-1000 ease-in duration-300">
           <div className="flex w-screen absolute top-4 left-0 px-2 md:px-12">
-            <HeaderName />
+            <HeaderName onClick={() => handleMenuClick()} />
             <div className="mr-[10%]">
               <CgClose
                 onClick={handleMenuClick}
@@ -121,7 +121,11 @@ const Navigation = () => {
           <div className="p-4">
             <ul className="">
               <p className="text-3xl font-bold py-2">
-                <Link href="/about">About Us</Link>
+                <Link href="/about">
+                  <p className="cursor-grab" onClick={() => handleMenuClick()}>
+                    About Us
+                  </p>
+                </Link>
               </p>
               <a
                 href="#"
@@ -145,7 +149,11 @@ const Navigation = () => {
           <div className="p-4">
             <ul className="">
               <p className="text-3xl font-bold pb-4">
-                <Link href="/about">Information and Resources</Link>
+                <Link href="/about">
+                  <p className="cursor-grab" onClick={() => handleMenuClick()}>
+                    Information and Resources
+                  </p>
+                </Link>
               </p>
               <li>
                 <a href="#" className="flex text-sm md:text-2xl">
