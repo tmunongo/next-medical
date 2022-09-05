@@ -65,7 +65,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="bg-white">
+      <div className="bg-[url('/assets/images/bg.svg')]">
         <div className="slideshow">
           <div
             className="slideshowSlider"
